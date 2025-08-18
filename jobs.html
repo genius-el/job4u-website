@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>job4u | Job Listings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f2f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      background-color: #1877f2;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1877f2;
+    }
+
+    .job-card {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .job-card h3 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .job-card p {
+      margin: 5px 0;
+    }
+
+    .job-actions {
+      margin-top: 10px;
+    }
+
+    .job-actions button {
+      padding: 10px 15px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .apply-btn {
+      background-color: #42b72a;
+      color: white;
+    }
+
+    .save-btn {
+      background-color: #ccc;
+      color: #333;
+    }
+
+    .apply-btn:hover {
+      background-color: #36a420;
+    }
+
+    .save-btn:hover {
+      background-color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <div>Job4U</div>
+    <div>
+      <a href="profile.html">My Profile</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>Available Jobs</h1>
+
+    <div class="job-card">
+      <h3>Frontend Developer</h3>
+      <p><strong>Company:</strong> TechSpark Ltd.</p>
+      <p><strong>Location:</strong> Remote</p>
+      <p>Looking for a junior frontend developer familiar with HTML, CSS, and JavaScript.</p>
+      <div class="job-actions">
+        <button class="apply-btn">Apply</button>
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <h3>Graphic Designer</h3>/
+      <p><strong>Company:</strong> CreativeHaus</p>
+      <p><strong>Location:</strong> Abuja, Nigeria</p>
+      <p>We need a designer to help create logos, flyers, and digital banners.</p>
+      <div class="job-actions">
+        <button class="apply-btn">Apply</button>
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <h3>Data Entry Assistant</h3>
+      <p><strong>Company:</strong> QuickData Inc.</p>
+      <p><strong>Location:</strong> Lagos (On-site)</p>
+      <p>Help manage and organize company data. Basic Excel skills required.</p>
+      <div class="job-actions">
+        <button class="apply-btn">Apply</button>
+        <button class="save-btn">Save</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

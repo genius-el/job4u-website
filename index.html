@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>job4u | Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      background-color: #f0f2f5;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    .job4u-logo {
+      color: #1877f2;
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .login-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+      width: 300px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0px;
+    }
+
+    .login-box input[type="text"],
+    .login-box input[type="submit"],
+    .login-box input[type="password"] {
+      width: 95%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .login-btn {
+      background-color: #1877f2;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 6px;
+      width: 100%;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .login-btn:hover {
+      background-color: #166fe5;
+    }
+
+    .forgot-link {
+      text-align: center;
+      display: block;
+      margin-top: 15px;
+      color: #1877f2;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+
+    .forgot-link:hover {
+      text-decoration: underline;
+    }
+
+    .divider {
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+
+    .create-btn {
+      background-color: #42b72a;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 6px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .create-btn:hover {
+      background-color: #36a420;
+    }
+
+    .link-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="job4u-logo">Job4U</div>
+    <div class="tagline">Interact with Clients and Collaborators in Real Time</div>
+    
+    <div class="login-box">
+      <form action="#" method="post" target="_blank" class="login-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="name">
+
+        <label for="text">Email or Phone Number:</label>
+        <input type="text" id="email" name="email" placeholder="Email or phone number">
+
+        <label for="text">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password">
+
+        <input type="submit" class="login-btn" value="Log In">
+        <a href="#" class="forgot-link">Forgotten password?</a>
+
+        <div class="divider"></div>
+        <div class="link-wrapper">
+          <a href="profile.html" style="width:100%;">
+            <input type="button" class="create-btn" value="Create New Account">
+          </a>
+        </div>
+
+      </form>
+
+    </div>
+  </div>
+</body>
+</html>
