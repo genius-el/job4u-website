@@ -11,6 +11,46 @@
       background-color: #e9ebee;
     }
 
+    .close-infoModal {
+      position: absolute;
+      top: 1.2rem;
+      right: 2rem;
+      font-size: 5rem;
+      color: #333;
+      cursor: pointer;
+      border: none;
+      background: none;
+    }
+
+    .hidden{
+      display: none;
+    }
+
+    .modal {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 70%;
+
+      background-color: #fff;
+      padding: 6rem;
+      border-radius: 5px;
+      box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+      z-index: 10;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(3px);
+      z-index: 5;
+    }
+
     .profile-container {
       max-width: 600px;
       margin: 50px auto;
@@ -36,6 +76,13 @@
       background-color: #ccc;
       display: block;
       margin: 20px auto;
+    }
+
+    .profile-pic img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0px auto;
     }
 
     .user-info {
@@ -65,6 +112,36 @@
       box-shadow: 0 1px 4px rgba(0,0,0,0.1);
     }
 
+    .end-section {
+      display: flex;
+      justify-content: center;
+    }
+
+    .end-links {
+      width: 80px;
+      margin: 0px 150px 0px 50px;
+      flex: 4 1 0;
+    }
+
+    .end-links a {
+      width: 80px;
+      margin-left: 200px;
+    }
+
+    .show-update {
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+      margin-left: 200px;
+      align-self:self-end;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: lightgreen;
+      border: 2px solid #ccc; 
+    }
+
     .logout, .apply {
       display: block;
       text-align: center;
@@ -81,10 +158,18 @@
 </head>
 <body>
 
+  <div class="modal hidden">
+    <button class="close-infoModal">&times;</button>
+    <h1>JOB ALERT!</h1>
+    <p>You have just been offered a front end software developer role by TechSpark Ltd. Send them an email immediately to acknowledge your acceptance of their offer. Also, ensure the meeting and interview details are understood. <br>
+    May the force be with you!</p>
+  </div>
+  <div class="overlay hidden"></div>
+
   <div class="profile-container">
     <div class="profile-header">
       <h1>Welcome, Maverick Genius!</h1>
-      <div class="profile-pic"><img src="#"></div>
+      <div class="profile-pic"><img src="images/Elvis.jpg" alt="Picture of Maverick Michael" height="60px" width="80px"></div>
     </div>
 
     <div class="user-info">
@@ -93,6 +178,8 @@
       <p><strong>Bio:</strong>Web Developer who loves really good music.</p>
     </div>
 
+    <div class="hidden">This </div>
+
     <div class="clients-section">
       <h3>Your Clients</h3>
       <div class="client">Creative Computers</div>
@@ -100,9 +187,19 @@
       <div class="client">Landscape View</div>
     </div>
 
-    <a href="jobs.html" class="apply">Apply for jobs</a>
-    <a href="login.html" class="logout">Log Out</a>
+    <div class="end-section">
+      <div class="end-links">
+        <a href="jobs.html" class="apply">Apply for jobs</a>
+        <a href="index.html" class="logout">Log Out</a>
+      </div>
+
+      <div class="show-update"><p>?</p></div>
+    </div>
+
+
   </div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
